@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "iceman"
+version = "0.1.0"
+description = "ICEMAN CLI tool"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+iceman = "iceman.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["iceman*"]
